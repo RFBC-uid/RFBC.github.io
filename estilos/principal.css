@@ -1,0 +1,411 @@
+
+main h1 {
+    	color: #C0262C;
+	font-size: 2.5em; /* 40/16=2.5 */
+	border-bottom: #C0262C solid thin;
+	padding-bottom: 7px;
+
+}
+
+main h2 {
+    font-size: 1.75em; /* 28/16=1.75 */
+}
+
+main p { 	
+	font-size: 1.1em; 	
+	line-height: 1.3em; 	
+	text-align: justify; 
+}
+
+main h2+p:first-line {
+	font-size: 1.17em;
+	font-variant: small-caps;
+	font-weight: bolder;
+	font-style: italic;
+	}
+
+main hr {
+	border-color: #C0262C;
+	}
+
+body { 	
+	font-family: Helvetica, Arial, sans-serif; 
+	margin: 10% 0 10 0;
+	}
+	
+/* pagina prodtos */
+#produtos table {
+	width: 600px;
+	margin: 50px auto 30px;
+	text-align: center;
+	border-collapse: collapse;
+	}
+#produtos th, #produtos td{
+	border: #999 solid 1px;
+	padding: 5px;
+	}
+#produtos caption{
+	background-color: #999;
+	color: #fff;
+	padding: 15px 0;
+	
+	
+	}
+#produtos td[colspan]{
+	font-style: italic;
+	font-weight: bold;
+	color: #999;	
+	}
+#produtos tr:hover{
+	background-color: #FEFF76;
+	}
+/* pagina Boletim */
+main h2{
+	background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
+	color: #fff;
+	letter-spacing: .1em;
+	padding: 7px;
+	width: 316px;
+	}
+/* pagina Boletim formulário */
+form{
+	background-color: #999;
+	margin: 30px 0;
+	padding: 20px;
+	border-radius: 0 15px;
+	}
+/*chrome/safari/opera*/
+::-webkit-input-placeholder{
+	color: #ddd;
+	font-style: italic;
+	font-size: 0.8em;
+	}
+/*firefox*/
+::-moz-placeholder{
+	color: #ddd;
+	font-style: italic;
+	font-size: 0.8em;
+	}	
+:-ms-input-placeholder{
+	color: #ddd;
+	font-style: italic;
+	font-size: 0.8em;
+	}	
+label{
+	display: block;
+	margin-top: 7px;
+	float: left;
+	width: 60px;
+	}
+	
+/* sombra de texto */
+input[type="submit"]{
+	background-color: #C0262C;
+	background: linear-gradient(to bottom, #6b1516 0%,#c0262c 30%,#c0262c 70%,#6b1516
+				100%);
+	border:none;
+	border-radius: 30px;
+	font-size: 1.2em;
+	color: #fff;
+	padding: 10px 30px;
+	margin: 20px 0;
+	cursor: pointer;
+	text-shadow: 2px 2px 5px #000;
+	}
+input#nome, input#email{
+	background-color: transparent;
+	border: none;
+	border-bottom: #000 solid 1px;
+	font-size: 1.2em;
+	color: #fff;
+	width: 800px;
+	}
+	
+/* pagina banho e tosa */
+#banhoEtosa fieldset{
+	background-color: #fff;
+	border: none;
+	border-radius: 0 15px;
+	margin-bottom: 20px;
+	}
+
+#banhoEtosa fieldset legend{
+	background-color: #C0262C;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: .05em;
+	padding: 10px;
+	margin-left: -13px;
+	}
+
+#banhoEtosa fieldset label{
+	display: block;
+	margin-top: 7px;
+	float: left; 
+	width: 115px;
+	}
+	
+#banhoEtosa fieldset input[type="text"], #banhoEtosa fieldset input[type="email"]{
+	border: none;
+	border-bottom: #000 solid 1px;
+	font-size: 1.2em;
+	color: #000;
+	width: 770px;
+	}
+#banhoEtosa fieldset type="textarea"{
+	width: 770px;
+	font-size: 1.2em;
+	border: #000 solid thin;
+	height: 100px;
+	
+	}
+#banhoEtosa fieldset label.labelsimples{
+	display: inline;
+	float: none;
+	
+	}
+#banhoEtosa p{
+	text-align: left;
+	
+	}
+
+#banhoetosa p:first-line{
+	font-size: initial;
+	font-variant: initial;
+	font-weight: initial;
+	font-style: initial;
+	
+	}
+
+/*sobrepor a regra do H2 - linha 61 */
+#banhoEtosa main h2{
+	background: #FEF84F url(../multimidia/postit.jpg) no-repeat top left;
+	color: #000;
+	font-size: 1.3125em;
+	width: 207px;
+	height: 115px;
+	letter-spacing: .07em;
+	padding: 35px;
+	
+	}
+/* pagina quem somos */
+#quemSomos main img{
+	float: left;
+	margin: 0 20px 20px 0;
+	border: solid #C0262C thin;
+	padding: 10px;
+	background-color: #fff;
+}
+
+	
+/* textos da pagina index */
+body {
+	background: #FFFBE4;
+	margin-top: 10px;
+	margin: auto;
+	text-align: justify;
+}
+
+header h1 {
+	width: 240px;
+	float: left;
+	background-image: url(../multimidia/meu-amigo-cao-petshop-header.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 200px;
+	text-indent: -1000px;
+	margin-bottom: 0;
+	
+}
+header #anuncio{
+	width: 510px;
+	float: left;
+	margin: 80px auto auto;
+	padding-top: 0
+}
+header section{
+	padding-top: 70px;
+}
+header section a[href="Boletim.html"]{
+	border: solid #C0262C thin;
+	padding: 15px;
+	border-radius: 15px;
+	color: #0C262C;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+header section p{
+	color: #999999;
+	margin: 33px auto 7px;
+}
+header section figure{
+	width: 100%;
+	margin: 0;
+}
+header section figure a{
+	padding: 25px 5px 0;
+	border: none;
+}
+header section figure a:first-child{
+	padding: 25px 5px 0 0;
+	
+}
+header section figure a:last-child{	
+	padding: 25px 0 0 5px;
+}
+/* estrutura de navegação */
+nav{
+	background-color: #000;
+	overflow: auto;
+	clear: both;
+	margin-top: 10px;
+}
+nav ul{
+	list-style: none;
+	padding-left: 0;
+	margin-top: 1px;
+}
+nav ul li{
+	float: left;
+	
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 9px 50px;
+	line-height: 2em;
+}
+#inicial a[href="Menu_RFBC.html"],
+#quemSomos a[href="quem-somos_RFBC.html"],
+#produtos a[href="Produtos_RFBC.html"],
+#curiosidades a[href="Curiosidades_RFBC.html"] { 
+background-color: #C0262C;
+	
+}
+
+/* estrutura da pagina inicial */
+
+
+#inicial aside{
+	width: 230px;
+	float: left;
+	margin-top: 30px;
+	
+}
+#inicial main{
+	width: 490px;
+	float: left;
+	margin: 30px 25px 
+
+	
+}
+footer{
+	clear: both;
+	border-top: 7px solid #999;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+footer p{
+	margin: 0;
+}
+a Curiosidades */
+
+#
+/*  pagina obrigado 
+#obrigado main p img{
+	float: left;
+	margin: 0 20px 20px 0;
+	border: solid #C0262C thin;
+	padding: 10px;
+	
+} */
+/* textos da pagina obrigado*/
+
+
+#obrigado main p img{
+	float: left;
+	margin: 0 20px 20px 0;
+	border: solid #C0262C thin;
+	padding: 10px; 
+		
+}
+
+#destaqueObrigado{
+	position: relative;
+	border: solid #C0262C 1px;
+	border-radius: 0 25px;
+	padding: 5px 25px;
+	margin: 20px 0;
+	
+}
+#obrigado #lacinho{
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	transform: rotate(40deg);
+	
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
+
+}
+/* transição em caixas - 3caixas de 163x230*/
+.anuncioAnime{
+	margin: 0 0 10px;
+	padding: 0;
+	
+}
+.anuncioAnime .boxAnuncio{
+	width: 163px;
+	height: 230px;
+	float:left;
+	border-bottom: solid thin #C0262C;
+	overflow: hidden;
+	position: relative;
+}
+.anuncioAnime .boxAnuncio p{
+	text-align: center;
+	font-size: .95em;
+	line-height: 1.3em;
+	background-color: rgba(255, 255, 255, 1);
+	border-left: solid thin #C0262C;
+	border-right: solid thin #C0262C;
+	margin: 0;
+	padding: 7px 15px;
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+	/*transition: ls linear 0.1s;*/
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: 0.1s;
+	cursor: pointer;
+
+}
+.anuncioAnime .boxAnuncio p:hover{
+	background-color: rgba(255, 255, 255, 0.7);
+	bottom: 0;
+}
+
+.anuncioAnime .boxAnuncio p:first-line{
+	font-size: 1.1em;
+	font-weight: bolder;
+	color: #C0262C;
+}
+/* controle de audio */
+aside audio{
+	width: 230px;
+	
+}
+/* controle de video */
+aside video{
+	width: 230px;
+	
+}
+
+
+

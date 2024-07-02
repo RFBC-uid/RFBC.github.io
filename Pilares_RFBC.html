@@ -2,30 +2,68 @@
 <html>
 <head>
 
-   	<meta charset="utf-8">
-    <title>Pilares_RFBC</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="animacoes.css">
-
+	<meta charset="utf-8">
+    <title>RFBC - Quem somos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="prefixfree.min.js"></script>
+    <script src="js/script.js"></script>
 	<!-- CSS bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
     <!-- fim CSS bootstrap -->
+    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <style>
 
-		.container{
-            margin: 0 auto;
-            width: 960px;
-            }
-
 		body {
 			background: #FFFBE4;
-			margin-top: 10px;
-			margin: auto;
-			text-align: justify;
-			}
+			text-align: justify center;
+            font-family: Arial, sans-serif;
+		}	
+
+		.container{
+            width: 80%;
+            margin: auto;
+        }
+
+	    /* midias queries */
+		
+		.header, .main, .footer {
+                padding: 20px;
+            }
+
+        /* Estilo para tablets (largura máxima de 768px) */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .header, .main, .footer {
+                padding: 15px;
+            }
+        }
+
+        /* Estilo para smartphones (largura máxima de 480px) */
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
+
+            .header, .main, .footer {
+                padding: 10px;
+            }
+
+            /* Ajuste de fontes para telas menores */
+            body {
+                font-size: 14px;
+            }
+
+            /* Ajuste de imagens para telas menores */
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
 
 		header h1{
     		font-size: 1.75em; /* 28/16=1.75 */
@@ -155,7 +193,7 @@
 				<div class="collapse navbar-collapse" id="barraBasica2">
 					<ul class="nav navbar-nav">
 						<li><a href="#"><img src="multimidia/Cloud.jpg" alt="Cloud"></a></li>
-						<li><a href="Menu_RFBC.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li class="active"><a href="#">Quem somos</a></li>	
 						<li><a href="quem-somos_RFBC.html"></a></li>		
 						<li><a href="Produtos_RFBC.html">Produtos</a></li>

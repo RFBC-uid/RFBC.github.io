@@ -10,11 +10,13 @@
 	<!-- CSS bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
     <!-- fim CSS bootstrap -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap/css/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   
+    
     <style>
 
         body {
@@ -34,56 +36,55 @@
             }
         
         /* Estilo para tablets (largura máxima de 768px) */
-            '@media (max-width: 768px) {
-                .container {
+        @media (max-width: 768px) {
+            .container {
                 width: 90%;
-                }
-
-                .header, .main, .footer {
-                    padding: 15px;
-                    }
             }
+            .header, .main, .footer {
+                padding: 15px;
+            }
+        }
 
             /* Estilo para smartphones (largura máxima de 480px) */
-            @media (max-width: 480px) {
-                .container {
-                    width: 100%;
-                    }
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
 
-                .header, .main, .footer {
-                    padding: 10px;
-                    }
+            .header, .main, .footer {
+                padding: 10px;
+            }
 
             /* Ajuste de fontes para telas menores */
-                body {
-                    font-size: 14px;
-                    }
+            body {
+                font-size: 14px;
+            }
 
             /* Ajuste de imagens para telas menores */
-                img {
-                    width: 100%;
-                    height: auto;
-                    }
+            img {
+                width: 100%;
+                height: auto;
             }
+        }
 
         main h1{
     		font-size: 1.75em; /* 28/16=1.75 */
 			color:#00f
-		}
+		    }
 
              
         main h3{
 			color:rgb(255, 208, 0)
-		}
+		    }
        
         main h4{
             color: #aa3b08;
-		}
+		    }
 
         main h5{
             color:rgb(9, 136, 52);
 
-		}
+		    }
 		
 		.barrinha-superior {
 			width: 100%;
@@ -99,7 +100,7 @@
 				
 		nav ul {
             color: rgb(147, 177, 212);
-		} 
+		    } 
 
 		#nav-superior {
       		background: #fff;
@@ -115,11 +116,9 @@
 
 					
 		main img{
-            float: left; 
             min-height: 100px;
 			padding: 10px 20px;
-        
-        }
+            }
 
         main p{
         	margin-top: 10px;
@@ -127,14 +126,15 @@
 			padding: 7px;
             color:rgb(9, 136, 52);
             text-align: justify;
-		}
+		    }
+
         main p1{
             margin-top: 10px;
 			margin-left: 10px;
 			padding: 7px;
         	color: rgb(240, 164, 22);
             text-align: justify;     
-		}
+		    }
 
         main p2{
             margin-top: 10px;
@@ -142,7 +142,7 @@
             padding: 7px;
         	color: rgb(228, 34, 50);
             text-align: justify;     
-		}   
+		    }   
 
         nav img {
 			width: 20px;
@@ -151,48 +151,44 @@
         
         #hsbc {
             color: #f01414; 
-        }
+            }
 
         #Bamerindus {
             color:rgb(9, 136, 52);
-        }
+            }
+
         #BB {
             color:rgb(255, 196, 0)
-        }
+            }
 
 	</style>
 
 </head>
 
 <body id="Bancos">
-    <container>
+
         <header>
             <div class="barrinha-superior"></div>
+     
+            <nav class="navbar  navbar-default" id="nav-superior">
 
-            <div class="container-fluid">
-       
-                <nav class="navbar  navbar-default" id="nav-superior">
-
-                    <div class="collapse navbar-collapse" id="barraBasica2">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#"><img src="multimidia/Cloud.jpg" alt="Cloud"></a></li>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="quem-somos_RFBC.html">Quem somos</a></li>		
-                            <li><a href="Produtos_RFBC.html">Produtos</a></li>
-                            <li><a href="Curiosidades_RFBC.html">Curiosidades</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav> 
+                <div class="collapse navbar-collapse" id="barraBasica2">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><img src="multimidia/Cloud.jpg" alt="Cloud"></a></li>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="quem-somos_RFBC.html">Quem somos</a></li>		
+                        <li><a href="Produtos_RFBC.html">Produtos</a></li>
+                        <li><a href="Curiosidades_RFBC.html">Curiosidades</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav> 
             
-            </div> 
-
-           
+            
         </header>
 
         <main>
             <div class="container">
                 <h1>RFBC - Bem vindo ao nosso site, uma empresa genuinamente Curitibana, esperamos que goste!<h1>
-
                 <br>
                 <h4>  
                     Atuamos no setor bancário há mais de 30 anos , vamos conhecer um pouco mais as instituições que se relacionaram ao 
@@ -209,7 +205,7 @@
 
                         <p div="bamerindus">
                             Foi o último banco Paranaense, chegou a ser o terceiro no ranking nacional,
-                            a RFBC atuou lá, com sistemas de fluxo de caixa (FCB),<br> e acompanhou de perto a transação para o novo Banco.<br>
+                            a RFBC atuou lá, com sistemas de fluxo de caixa (FCB), e acompanhou de perto a transação para o novo Banco.<br>
                             <br>
                             Ele criou o famoso "Natal Bamerindus" do Palacio Avenida que até hoje os bancos mantém por politicas de mercado.<br><br>
                             Seu slogam era: " <strong>Bamerindus o banco da nossa terra </strong>" 
@@ -279,7 +275,7 @@
                             <br>
                                 <figure>
                                     <a href="#" title="logo BB">
-                                        <img src="multimidia/logo_BB.jpg" class="img-responsive" alt="logo BB" >
+                                        <img src="multimidia/logo_BB.jpg" class="img-responsive" alt="Renato e Renata" >
                                     </a>
                                 </figure>
                                 
@@ -321,11 +317,11 @@
              
                     <p2>
                         O banco HSBC entrou no mercado brasileiro de TI prometendo uma cultura global, ou seja, um sistema
-                        único atendendo o mundo todo, não deu certo,<br> usava fabricas de softwares 
+                        único atendendo o mundo todo, não deu certo, usava fabricas de softwares 
                         espalhadas pelo globo, os mais usados foram os indianos.
                         <br>
                         <br>
-                        Tinham varios datacenters pelo mundo, México, Londres e outros.
+                        Tinham varios datacenters pelo mundo; México, Londres e outros...
                         <br>
                         <br>
                         A RFBC atuou em vários sistemas nacionais e internacionais, assim sendo até a venda do Banco por 
@@ -349,7 +345,7 @@
                                 <br>
                                 <figure>
                                     <a href="#" title="Site Xaim">
-                                        <img src="multimidia/HSBC_CAK.jpg" class="img-responsive" alt="CAK">
+                                        <img src="multimidia/HSBC_CAK.jpg" class="img-responsive" alt="CA">
                                     </a>
                                 </figure>
                             
@@ -397,7 +393,10 @@
                                     <img src="multimidia/logo_BRA.jpg" class="img-responsive" alt="Logo Bradesco" >
                                 </a>
                             </figure>
-                                           
+                            <figcaption>
+                                <a href="#" class="lk3" title="Logo Bradesco"></a>
+                            </figcaption>
+                        
                         </div>
 
                         <div class="col-sm-3 col-xs-6">
@@ -432,8 +431,7 @@
 
         </main>
         
-      
-    </container>
+ 
 </body>
 
 </html>

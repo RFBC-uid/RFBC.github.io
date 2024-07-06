@@ -1,461 +1,213 @@
-<!doctype html>
-<html lang="pt-BR"></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-
-    <meta charset="utf-8">
-    <title>Menu_RFBC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Bootstrap CSS -->
- 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFBC - Bem-vindo ao nosso site</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="styles.css" rel="stylesheet">
   <style>
-    
-    <!-- Custom CSS -->
-     
-    <style>
-        body {
-            background: #f8f9fa;
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            margin-bottom: 20px;
-        }
-        .header, .main, .footer {
-            padding: 30px;
+    .section-heading {
+      text-align: center;
+      width: 100%;
         }
 
-        <!-- fim CSS bootstrap -->
-
-     
-        body {
-			background: #FFFBE4;
-			text-align: justify center;
-            font-family: Arial, sans-serif;
-			}		
-
-		.container{
-            width: 90%;
-            margin: auto;
-
-            }
-            
-          
-        /* Estilo para tablets (largura máxima de 768px) */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                }
-            .header, .main, .footer {
-                padding: 15px;
-                }
-            }
-
-            /* Estilo para smartphones (largura máxima de 480px) */
-        @media (max-width: 480px) {
-            .container {
-                width: 100%;
-                }
-
-            .header, .main, .footer {
-                padding: 10px;
-                }
-
-            /* Ajuste de fontes para telas menores */
-            body {
-                font-size: 14px;
-                }
-
-            /* Ajuste de imagens para telas menores */
-            img {
-                width: 100%;
-                height: auto;
-                }
-            }
-
-            .custom-margin-right {
-                margin-right: 30px; /* Ajuste conforme necessário */
-                }
-
-        main h1{
-    		font-size: 1.75em; /* 28/16=1.75 */
+    #color-blue{
 			color:#00f
-		    }
+		  }
 
-             
-        main h3{
-			color:rgb(255, 208, 0)
-		    }
-       
-        main h4{
-            color: #aa3b08;
-		    }
+    #color-green{
+			color:rgb(0, 255, 55)
+		  }
+    
+    #color-yelow{
+			color:rgb(255, 196, 0)
+		  }
 
-        main h5{
-            color:rgb(9, 136, 52);
+    #color-red{
+			color:rgb(255, 0, 0)
+		  }
 
-		    }
-		
-		.barrinha-superior {
-			width: 100%;
-			height: 4px;
-			background: #369caf;
-			background-image: -o-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -ms-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -webkit-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -moz-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			}
-					
-				
-		nav ul {
-            color: rgb(147, 177, 212);
-		    } 
+      #color-red-1{
+			color:rgb(177, 0, 0)
+		  }
 
-		#nav-superior {
-      		background: #fff;
-    		}
-		
-		#nav-superior li a {
-      		padding: 2px 4px;
-    		}
-
-    	#nav-superior li a:hover {
-      		color: #00f;
-    		}
-
-					
-		main img{
-            min-height: 10px;
-			padding: 10px 20px;
-            }
-
-        main p{
-        	margin-top: 10px;
-			margin-left: 10px;
-			padding: 7px;
-            color:rgb(9, 136, 52);
-            text-align: justify;
-		    }
-
-        main p1{
-            margin-top: 10px;
-			margin-left: 10px;
-			padding: 7px;
-        	color: rgb(240, 164, 22);
-            text-align: justify;     
-		    }
-
-        main p2{
-            margin-top: 10px;
-			margin-left: 10px;
-            padding: 7px;
-        	color: rgb(228, 34, 50);
-            text-align: justify;     
-		    }   
-
-        .image-spacing {
-                margin-right: 10px; /* Espaço à direita da imagem */
-            }
-
-        nav img {
-			width: 20px;
-			height: 20px;
-			}
-        
-        #hsbc {
-            color: #f01414; 
-            }
-
-        #Bamerindus {
-            color:rgb(9, 136, 52);
-            }
-
-        #BB {
-            color:rgb(255, 196, 0)
-            }
-
-	</style>
+    #texto-alinhado {	
+			text-align: justify ;
+		}	
+  
+  </style>
 
 </head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="multimidia/logo_RFBC_IV.jpg" alt="RFBC Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pilares.html">Pilares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<body id="Bancos">
+  <!-- Banner -->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <br>
+      <h1 class="display-4"  id="color-blue">RFBC - Bem vindo ao nosso site</h1>
+      <p class="lead">Uma empresa genuinamente Curitibana, atuando no setor bancário há mais de 30 anos.</p>
+    </div>
+  </div>
 
-    <header>
-        <div class="barrinha-superior"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-            
-       
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <a class="navbar-brand" href="#">
-                        <img src="multimidia/Cloud.jpg" width="30" height="30" alt="Cloud">
-                    </a>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="quem-somos_RFBC.html">Quem somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Produtos_RFBC.html">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Curiosidades_RFBC.html">Curiosidades</a>
-                    </li>
-                </ul>
+  <!-- Section for each institution -->
+  <section id="institutions" class="pb-5">
+    <div class="container">
+      <div class="row bamerindus-section bamerindus-color mb-4">
+        <div class="col-md-12">
+          <h2 class="section-heading" id="color-green">Bamerindus</h2>
+        </div>
+        <div class="col-md-6" id="text-alinhado">
+          <p>Foi o último banco Paranaense, chegou a ser o terceiro no ranking nacional, a RFBC atuou lá, com sistemas de fluxo 
+            de caixa (FCB), e acompanhou de perto a transação para o novo Banco. Ele criou o famoso "Natal Bamerindus" do Palacio 
+            Avenida que até hoje os bancos mantém por politicas de mercado.</p>
+          <p>Seu slogam era: " Bamerindus o banco da nossa terra "</p>
+          <p>Seu dono era conhecido como Zé do Chapéu, foi ministro do governo FHC</p>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="row">
+            <div class="col-4">
+              <img src="multimidia/logo_bamerindus.jpg" class="img-fluid rounded img-proportional" alt="Bamerindus Foto 1">
             </div>
-        </nav>
-    </header>
-
-        <main>
-            <div class="container">
-                <h1>RFBC - Bem vindo ao nosso site, uma empresa genuinamente Curitibana, esperamos que goste!<h1>
-                <br>
-                <h4>  
-                    Atuamos no setor bancário há mais de 30 anos , vamos conhecer um pouco mais as instituições que se relacionaram ao 
-                    longo dos anos conosco.
-                </h4>
-        
-                <br> 
-
-                <h3 id="Bamerindus">
-                    <strong>
-                        Bamerindus
-                    </strong>
-
-                </h3>
-
-                <p div="bamerindus">
-                        Foi o último banco Paranaense, chegou a ser o terceiro no ranking nacional,
-                        a RFBC atuou lá, com sistemas de fluxo de caixa (FCB), e acompanhou de perto a transação para o novo Banco.<br>
-                        <br>
-                        Ele criou o famoso "Natal Bamerindus" do Palacio Avenida que até hoje os bancos mantém por politicas de mercado.<br><br>
-                        Seu slogam era: " <strong>Bamerindus o banco da nossa terra </strong>" 
-                        <br>
-                        <br>
-                        Seu dono era conhecido como Zé do Chapéu, foi ministro do governo FHC
-                </p>
-                        
-                <div class="row">
-                 
-                            <div class="col-sm-4">
-                                <br>
-                                <figure>
-                                    <a href="#" title="logo Bamerindus">
-                                        <img src="multimidia/logo_bamerindus.jpg" class="mr-2" alt="Logo Bamerindus" >
-                                    </a>
-                                </figure>
-                                 
-                            </div>
-
-                            <div class="col-sm-4">
-                                <br>
-                                <figure>
-                                    <a href="#" title="João Lopes">
-                                        <img src="multimidia/João_lopes_Bamerindus.jpg" class="mr-2" alt="João Lopes">
-                                    </a>
-                                </figure>
-                                                        
-                            </div>
-
-                            <div class="col-sm-4">
-                                <br>
-                                <figure>
-                                    <a href="#" title="zé do chapéu">
-                                        <img src="multimidia/Ze_eduardo_bamerindus.jpg" class="mr-2" alt="Zé do chapéu">
-                                    </a>
-                                </figure>
-                                             
-                            </div>
-                      </div>           
+            <div class="col-4">
+              <img src="multimidia/João_lopes_Bamerindus.jpg" class="img-fluid rounded img-proportional" alt="Bamerindus Foto 2">
             </div>
+            <div class="col-4">
+              <img src="multimidia/Ze_eduardo_bamerindus.jpg" class="img-fluid rounded img-proportional" alt="Bamerindus Foto 3">
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="container">
-                <br>
-                <br>
-                <h3 id="BB">
-                    Banco do Brasil - Brasília
-                </h3>
-                
-    
-                <p1>
-                    O banco do Brasil possui um complexo tecnológico na Asa Norte onde concentra todo seu data center,
-                    na época era o Ximenes o presidente.<br>
-                    A RFBC atuou lá entre 1998 e 1999, via Softage,  fazendo conversão de sistemas da linguagem CSP para linguagem Natural.<br>
-                    <br>
-                    Foi um periodo bacana;<br>
-                    <br>
-                    Foram convertidos vários sistemas.
-                    
-                </p1>
-                    
-                <div class="row">
-                        <div class="col-sm-4">
-                            <br>
-                            <figure>
-                                <a href="#" title="logo BB">
-                                    <img src="multimidia/logo_BB.jpg" class="mr-2" alt="Logo BB" >
-                                </a>
-                            </figure>
-                                                           
-                        </div>
+      <div class="row banco-brasil-section banco-brasil-color mb-4">
+        <div class="col-md-12">
+          <h2 class="section-heading" id="color-yelow">Banco do Brasil - Brasília</h2>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="row">
+            <div class="col-4">
+              <img src="multimidia/logo_BB.jpg" class="img-fluid rounded img-proportional" alt="Banco do Brasil Foto 1">
+            </div>
+            <div class="col-4">
+              <img src="multimidia/Complexo_BB.jpg" class="img-fluid rounded img-proportional" alt="Banco do Brasil Foto 2">
+            </div>
+            <div class="col-4">
+              <img src="multimidia/Ximenes_BB.jpg" class="img-fluid rounded img-proportional" alt="Banco do Brasil Foto 3">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>O banco do Brasil possui um complexo tecnológico na Asa Norte onde concentra todo seu data center, na época era o Ximenes o presidente.</p>
+          <p>A RFBC atuou lá entre 1998 e 1999, via Softage, fazendo conversão de sistemas da linguagem CSP para linguagem Natural.</p>
+          <p>Foi um periodo bacana.</p>
+          <p>Foram convertidos vários sistemas.</p>
+        </div>
+      </div>
 
-                        <div class="col-sm-4">
-                            <br>
-                            <figure>
-                                <a href="#" title="Complexo BB">
-                                    <img src="multimidia/Complexo_BB.jpg" class="mr-2" alt="complexo ">
-                                </a>
-                            </figure>
-                            
-                        </div>
+      <div class="row hsbc-section hsbc-color mb-4">
+        <div class="col-md-12">
+          <h2 class="section-heading" id="color-red">Banco HSBC</h2>
+        </div>
+        <div class="col-md-6">
+          <p>O banco HSBC entrou no mercado brasileiro de TI prometendo uma cultura global, ou seja, um sistema único atendendo o mundo todo, não deu certo, usava fabricas de softwares espalhadas pelo globo, os mais usados foram os indianos.</p>
+          <p>Tinham varios datacenters pelo mundo; México, Londres e outros...</p>
+          <p>A RFBC atuou em vários sistemas nacionais e internacionais, assim sendo até a venda do Banco por razões desconhecidas.</p>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="row">
+            <div class="col-4">
+              <img src="multimidia/logo_HSBC.jpg" class="img-fluid rounded img-proportional" alt="HSBC Foto 1">
+            </div>
+            <div class="col-4">
+              <img src="multimidia/HSBC_CAK.jpg" class="img-fluid rounded img-proportional" alt="HSBC Foto 2">
+            </div>
+            <div class="col-4">
+              <img src="multimidia/Andre_HSBC.jpg" class="img-fluid rounded img-proportional" alt="HSBC Foto 3">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="row bradesco-section bradesco-color">
+        <div class="col-md-12">
+          <h2 class="section-heading" id="color-red-1">Banco Bradesco</h2>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="row">
+            <div class="col-4">
+              <img src="multimidia/logo_BRA.jpg" class="img-fluid rounded img-proportional" alt="Bradesco Foto 1">
+            </div>
+            <div class="col-4">
+              <img src="multimidia/CAX_BRA.jpg" class="img-fluid rounded img-proportional" alt="Bradesco Foto 2">
+            </div>
+            <div class="col-4">
+              <img src="multimidia/Presidente_BRA.jpg" class="img-fluid rounded img-proportional" alt="Bradesco Foto 3">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>O Bradesco aproveitou toda a mão-de-obra e sistemas, que era de excelência, do banco comprado, que ja tinha feito algo similar , para modernizar seus processos de trabalho, tinha uma hierarquia antiga e hoje está atualizado.</p>
+          <p>A RFBC atua até hoje no Bradesco, como SQUAD Lider da parte de sistemas jurídicos, Segurança Corporativa e Ouvidoria, entre outros.</p>
+        </div>
+      </div>
+    </div>    
+  </section>
 
-                        <div class="col-sm-4">
-                            <br>
-                            <figure>
-                                <a href="#" title="Ximenes">
-                                    <img src="multimidia/Ximenes_BB.jpg" class="mr-2" alt="Ximenes">
-                                </a>
-                            </figure>
-                                
-                        </div>
+  <!-- Footer -->
+  <footer class="footer bg-light py-3">
+    <div class="container text-center">
+      <span class="text-muted">&copy; 2024 RFBC. Todos os direitos reservados.</span>
+      <div class="mt-2">
+        <a href="mailto:r_f_b_c@yahoo.com.br" class="text-muted mx-2"><i class="fas fa-envelope"></i></a>
+        <a href="https://facebook.com" class="text-muted mx-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="text-muted mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" class="text-muted mx-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com" class="text-muted mx-2" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5541996870282" class="text-muted mx-2" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
 
-                </div>           
-            </div> 
-
-            <div class="container">
-                    
-                    <br>
-                    <br>       
-
-                    <h3 id="hsbc">
-                        <strong>Banco HSBC</strong>
-                    </h3>
-
-             
-                    <p2>
-                        O banco HSBC entrou no mercado brasileiro de TI prometendo uma cultura global, ou seja, um sistema
-                        único atendendo o mundo todo, não deu certo, usava fabricas de softwares 
-                        espalhadas pelo globo, os mais usados foram os indianos.
-                        <br>
-                        <br>
-                        Tinham varios datacenters pelo mundo; México, Londres e outros...
-                        <br>
-                        <br>
-                        A RFBC atuou em vários sistemas nacionais e internacionais, assim sendo até a venda do Banco por 
-                        razões desconhecidas. 
-                    
-                    </p2>
-                    
-                    <div class="row">
-    
-                            <div class="col-sm-4">
-                            <br>
-                                <figure>
-                                    <a href="#" title="logo BB">
-                                        <img src="multimidia/logo_HSBC.jpg" class="mr-2" alt="Logo HSBC" >
-                                    </a>
-                                </figure>
-                                
-                            </div>
-
-                            <div class="col-sm-4">
-                                <br>
-                                <figure>
-                                    <a href="#" title="Site Xaim">
-                                        <img src="multimidia/HSBC_CAK.jpg" class="mr-2" alt="CA">
-                                    </a>
-                                </figure>
-                            
-                            </div>
-
-                            <div class="col-sm-4">
-                                <br>
-                                <figure>
-                                    <a href="#" title="Ximenes">
-                                        <img src="multimidia/Andre_HSBC.jpg" class="mr-2" alt="André Beltrão">
-                                    </a>
-                                </figure>
-                                
-                            </div>
-                    </div>           
-            </div> 
-
-            <div class="container">
-                    
-                <br>
-                <br>       
-
-                <h3 id="hsbc">
-                    <strong>Banco Bradesco</strong>
-                </h3>
-
-         
-                <p2>
-                    O Bradesco aproveitou toda a mão-de-obra e sistemas, que era de excelência, do banco comprado, que ja tinha 
-                    feito algo similar , para modernizar seus processos de trabalho, tinha uma hierarquia antiga e 
-                    hoje está atualizado.<br>
-                    <br>
-                    A RFBC atua até hoje no Bradesco, como SQUAD Lider da parte de sistemas jurídicos, Segurança Corporativa e 
-                    Ouvidoria, entre outros.
-                
-                </p2>
-                
-                <div class="row">
-
-                        <div class="col-sm-4">
-                        <br>
-                            <figure>
-                                <a href="#" title="logo Bra">
-                                    <img src="multimidia/logo_BRA.jpg" class="mr-2" alt="Logo Bradesco" >
-                                </a>
-                            </figure>
-                            <figcaption>
-                                <a href="#" class="lk3" title="Logo Bradesco"></a>
-                            </figcaption>
-                        
-                        </div>
-
-                        <div class="col-sm-4">
-                            <br>
-                            <figure>
-                                <a href="#" title="Xaxim">
-                                    <img src="multimidia/CAX_BRA.jpg" class="mr-2" alt="Site Xaxim">
-                                </a>
-                            </figure>
-                        
-                        </div>
-
-                        <div class="col-sm-4">
-                            <br>
-                            <figure>
-                                <a href="#" title="Noronha">
-                                    <img src="multimidia/Presidente_BRA.jpg" class="mr-2" alt="Noronha">
-                                </a>
-                            </figure>
-                            
-                        </div>
- 
-                </div>           
-        </div>      
-           
-            <footer>
-                <br>
-                <br>
-                <br>
-    
-            </footer> 
-
-        </main>
-        
- 
+  <!-- Bootstrap and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
-
-

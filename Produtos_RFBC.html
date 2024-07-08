@@ -1,61 +1,59 @@
-<!doctype html>
+<<!doctype html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RFBC - Bem-vindo ao nosso site</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- Custom styles -->
+	<link href="styles.css" rel="stylesheet">
+	
+</head>
 
-	<meta charset="utf-8">
-    <title>RFBC - Quem somos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="prefixfree.min.js"></script>
-    <script src="js/script.js"></script>
-	<!-- CSS bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-    <!-- fim CSS bootstrap -->
-    <link rel="stylesheet" href="css/styles.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <style>
+<style>
 
-		body {
-			background: #FFFBE4;
-			text-align: justify center;
-            font-family: Arial, sans-serif;
-		}	
+	body {
+		background: #FFFBE4;
+		text-align: justify center;
+		font-family: Arial, sans-serif;
+		width: 90%;
+        margin: auto;
+		}
 
-		.container{
-            width: 80%;
-            margin: auto;
+    /* midias queries */
+		
+	.header, .main, .footer {
+        padding: 20px;
         }
 
-	    /* midias queries */
-		
-		.header, .main, .footer {
-                padding: 20px;
-            }
-
         /* Estilo para tablets (largura máxima de 768px) */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
             }
-            .header, .main, .footer {
-                padding: 15px;
+        .header, .main, .footer {
+            padding: 15px;
             }
         }
 
         /* Estilo para smartphones (largura máxima de 480px) */
-        @media (max-width: 480px) {
-            .container {
-                width: 100%;
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;
             }
 
-            .header, .main, .footer {
-                padding: 10px;
+        .header, .main, .footer {
+            padding: 10px;
             }
 
-            /* Ajuste de fontes para telas menores */
-            body {
-                font-size: 14px;
+        /* Ajuste de fontes para telas menores */
+        body {
+            font-size: 14px;
             }
 
             /* Ajuste de imagens para telas menores */
@@ -81,24 +79,14 @@
 		
 		main h2{
 			font-size: 1.50em; /* 28/16=1.75 */
-			color:rgba(255, 102, 0, 0.904)
+			color:rgb(16, 104, 177)
 		}
 		main h3{
 			font-size: 1.05em; /* 28/16=1.75 */
     		color:rgb(255, 123, 0)
 		}
 
-		.barrinha-superior {
-			width: 100%;
-			height: 4px;
-			background: #369caf;
-			background-image: -o-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -ms-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -webkit-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -moz-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			}
-			
+
 		.destaques img {
       		width 100%;
     		}
@@ -146,10 +134,7 @@
 			color: #9c6496;
 			}
 
-		nav img {
-            width: 20px;
-            height: 20px;
-		    }
+		
 	
 		nav ul {
             color: rgb(147, 177, 212);
@@ -180,7 +165,7 @@
 		}
 
 		#Familia {
-			color: #8d9b31;
+			color: #230477;
 		}
 		#Cidadania {
 			color: #4476ab;
@@ -188,41 +173,63 @@
 		#Tecnologia {
 			color: #9c6496;
 		}
+		#color-blue{
+			color:#00f
+		  	}
+		
+		#color-blue-1{
+			color:rgb(5, 5, 121)
+		  	}
+		#texto-alinhado {	
+			text-align: justify right;
+		  }	
 		
 		
-	</style>
+</style>
 
-</head>
 
 <body>
-	<header>
-		<div class="barrinha-superior"></div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+		<a class="navbar-brand" href="#">
+			<img src="multimidia/Logo_RFBC.JPG" alt="RFBC Logo" height="50">
+		</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			  	<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="quem-somos_RFBC.html">Quem somos</a>
+			  	</li>
+			  	<li class="nav-item">
+					<a class="nav-link" href="pilares_RFBC.html">Pilares</a>
+			  	</li>
+			   	<li class="nav-item active">
+					<a class="nav-link" href="produtos_RFBC.html"><ins>Produtos</ins></a>
+			  	</li>
+			  	<li class="nav-item">
+					<a class="nav-link" href="Contatos_RFBC.html">Contatos</a>
+			  	</li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+	  <!-- Banner -->
+	<div class="jumbotron jumbotron-fluid text-center">
+		<br>
+	  	<h1 id="color-blue">RFBC - Produtos</h1>
+		<h2 id="color-blue-1" class="lead">Nossos produtos ,,,</h2>
+	</div>
 
-		<div class="container-fluid">
-			<nav class="navbar  navbar-default" id="nav-superior">
-
-				<div class="collapse navbar-collapse" id="barraBasica2">
-					<ul class="nav navbar-nav">
-						<li><a href="#"><img src="/multimidia/Cloud.jpg" alt="Cloud"></a></li>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="quem-somos_RFBC.html">Quem somos</a></li>
-                        <li class="active"><a href="#"> <u> Produtos </u> </a></li>			
-						<li><a href="Produtos_RFBC.html"></a></li>
-						<li><a href="Contatos_RFBC.html">Contatos</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</nav>  
-
-			<h1>
-                RFBC - Produtos  
-            <h1>
-
-            </div>
-    </header>
     <main>
-		<div id="familia" class="tab-pane active fade in container">
-            <h2>
-                Atualmente
+
+		<div id="familia" >
+        	<h2>
+                Atualmente:
 			</h2>
 
             <br>            
@@ -307,9 +314,25 @@
             	Análise / Desenvolvimento / Manutenções <br>
             </p>
 
-			<footer>
-				<h3>  Atendimento: r_f_b_c@yahoo.com.br • (41) 99687-0282</h3>
-			</footer>
+	<footer class="footer bg-light py-3">
+		<div class="container text-center">
+		  <span class="text-muted">&copy; 2024 RFBC. Todos os direitos reservados.</span>
+		  <div class="mt-2">
+				<a href="mailto:r_f_b_c@yahoo.com.br" class="text-muted mx-2"><i class="fas fa-envelope"></i></a>
+				<a href="https://facebook.com" class="text-muted mx-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://twitter.com" class="text-muted mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://linkedin.com" class="text-muted mx-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://instagram.com" class="text-muted mx-2" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://wa.me/5541996870282" class="text-muted mx-2" target="_blank"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+	</footer>
+				
+				  <!-- Bootstrap and dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+				
 		</div>
 	</main>
 			

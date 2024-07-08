@@ -1,303 +1,144 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFBC - Bem-vindo ao nosso site</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="styles.css" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <title>RFBC - Quem somos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="prefixfree.min.js"></script>
-    <script src="js/script.js"></script>
-	<!-- CSS bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-    <!-- fim CSS bootstrap -->
-    <link rel="stylesheet" href="css/styles.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <style>
+</head>
 
-        body {
-			background: #FFFBE4;
-			text-align: justify center;
-            font-family: Arial, sans-serif;
+<style>
+
+	body {
+		background: #FFFBE4;
+		text-align: justify center;
+        font-family: Arial, sans-serif;
+		width: 90%;
+        margin: auto;
 		}	
 
-		.container{
-            width: 80%;
-            margin: auto;
-        }
-
+	
 	    /* midias queries */
 		
-		.header, .main, .footer {
-                padding: 20px;
-            }
+	
 
-        /* Estilo para tablets (largura máxima de 768px) */
+    /* Estilo para tablets (largura máxima de 768px) */
         @media (max-width: 768px) {
             .container {
                 width: 90%;
-            }
+                }
             .header, .main, .footer {
                 padding: 15px;
+                }
             }
-        }
 
         /* Estilo para smartphones (largura máxima de 480px) */
         @media (max-width: 480px) {
             .container {
                 width: 100%;
-            }
+                }
 
             .header, .main, .footer {
                 padding: 10px;
-            }
+                }
 
-            /* Ajuste de fontes para telas menores */
+        /* Ajuste de fontes para telas menores */
             body {
                 font-size: 14px;
-            }
+                }
 
             /* Ajuste de imagens para telas menores */
             img {
                 width: 100%;
                 height: auto;
+                }
             }
-        }
         
-        header h1{
-    		font-size: 1.75em; /* 28/16=1.75 */
+        #color-blue{
 			color:#00f
-		}
-        main h3{
-			color:rgb(255, 208, 0)
-		}
-       
-        header h4{
-            color: #8b4ac1;
-		}
-        main h4{
-            color:rgb(26, 10, 99);
+		  	}
 
-		}
+		#color-blue-1{
+		    color:rgb(6, 6, 155)
+			}
+      		
 		
-		.barrinha-superior {
-			width: 100%;
-			height: 4px;
-			background: #369caf;
-			background-image: -o-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -ms-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -webkit-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: -moz-linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			background-image: linear-gradient(to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22);
-			}
-			
-		
-		.bc1 {
-			border-bottom: 6px solid #c1734a;
-			}
-
-		.lk1 {
-		    color:rgb(9, 136, 52);
-			}
-
-		.bc2 {
-			border-bottom: 6px solid #8d9b31;
-			}
-
-		.lk2 {
-			 color: #fff;
-			}
-
-		.bc3 {
-			border-bottom: 6px solid #4476ab;
-			}
-
-		.lk3 {
-			display: block;
-			color: #4476ab;
-			}
-
-		.bc4 {
-			border-bottom: 6px solid #9c6496;
-			}
-
-		.lk4 {
-			display: block;
-			color: #9c6496;
-			}
-
-		nav img {
-            width: 20px;
-            height: 20px;
-		    }
-	
-		nav ul {
-            color: rgb(147, 177, 212);
-			} 
-
-		#nav-superior {
-      		background: #fff;
-    		}
-		
-		#nav-superior li a {
-      		padding: 2px 4px;
-    		}
-
-    	#nav-superior li a:hover {
-      		color: #00f;
-    		}
-
-		#img2 {
-			float: right;
-			}
-
-		#Fundadores {
-			color: #c1734a;
-			padding: 5px;
-		}
-
-		#Familia {
-			color: #8d9b31;
-		}
-		#Cidadania {
-			color: #4476ab;
-		}
-		#Tecnologia {
-			color: #9c6496;
-		}
-		
-		main img{
-            float: left; 
-            min-height: 100px;
-			padding: 10px 20px;
-        
-        }
-
-        main p{
-        	margin-top: 10px;
-			margin-left: 10px;
-			padding: 7px;
-            color:rgb(9, 136, 52);
-            text-align: justify;
-		}
-        main p1{
-            margin-top: 10px;
-			margin-left: 10px;
-			padding: 7px;
-        	color: rgb(240, 164, 22);
-            text-align: justify;     
-		}
-
-        main p2{
-            margin-top: 10px;
-			margin-left: 10px;
-            padding: 7px;
-        	color: rgb(228, 34, 50);
-            text-align: justify;     
-		}
-
-
-        main h2{
-			font-size: 1.75em; /* 28/16=1.75 */
-			color:rgb(5, 5, 99)
-		}
-
-        main h1{
-    		font-size: 1.75em; /* 28/16=1.75 */
-			color:#00f
-        }
-
-        #hsbc {
-            color: #f01414; 
-        }
-
-        #bradesco {
-            color: #f01414; 
-        }
-
-        #Bamerindus {
-            color:rgb(9, 136, 52);
-        }
-        #BB {
-            color:rgb(255, 196, 0)
-        }
+     
 
 	</style>
 
 </head>
 
-<body id="Bancos">
+<body >
     <container>
-        <header>
-            <div class="barrinha-superior"></div>
-
-            <div class="container-fluid">
-       
-                <nav class="navbar  navbar-default" id="nav-superior">
-
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barraBasica2">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#" data-toggle="collapse"
-                        data-target="#barraSuperior">Menu</a>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="barraBasica2">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#"><img src="/multimidia/Cloud.jpg" alt="Cloud"></a></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="quem-somos_RFBC.html">Quem somos</a></li>		
-                            <li><a href="Produtos_RFBC.html">Produtos</a></li>
-                            <li class="active"><a href="#"> <u>Contatos </u> </a></li>
-                            <li><a href="Contatos_RFBC.html"></a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav>  
-
-                <h1>RFBC - contatos<h1>
-
-                <br>
-                
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="multimidia/Logo_RFBC.JPG" alt="RFBC Logo" height="50">
+            </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem-somos_RFBC.html">Quem somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pilares_RFBC.html">Pilares</a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="produtos_RFBC.html">Produtos</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="Contatos_RFBC.html"><ins>Contatos</ins></a>
+                      </li>
+                </ul>
+              </div>
             </div>
-            <br> 
-        </header>
-
-        <main>
-                <div class="container">
-
-                <h2>
-                    Podem nos contatar conforme abaixo:
-                </h2>
-
-                    <br>
- 
-
-                <h4>
-                    Renato Fabiano Batisti Cóssio <br><br>
-                    Celular:  41 99687-0282 <br><br>
-                    E-mail :  rfbc10@gmail.com  <br><br>
-                    Curitiba - PR <br><br>
-                    
-                </h4>
-
-
-
-
-       
-            <footer>
-                <br>
-                <br>
-                <br>
-    
-            </footer> 
-
-        </main>
+        </nav>
+          <!-- Banner -->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <br>
+              <h1 id="color-blue">RFBC - Contatos</h1>
+              <br>
+              <h4 id="color-blue-1">
+                Renato Fabiano Batisti Cóssio <br><br>
+                Celular:  41 99687-0282 <br><br>
+                E-mail :  rfbc10@gmail.com  <br><br>
+                Curitiba - PR <br><br>
+                
+            </h4>
+        </div>
         
+        <footer class="footer bg-light py-3">
+            <div class="container text-center">
+            <span class="text-muted">&copy; 2024 RFBC. Todos os direitos reservados.</span>
+            <div class="mt-2">
+                    <a href="mailto:r_f_b_c@yahoo.com.br" class="text-muted mx-2"><i class="fas fa-envelope"></i></a>
+                    <a href="https://facebook.com" class="text-muted mx-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="text-muted mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com" class="text-muted mx-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com" class="text-muted mx-2" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5541996870282" class="text-muted mx-2" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </footer>
+                    
+                      <!-- Bootstrap and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       
     </container>
 </body>

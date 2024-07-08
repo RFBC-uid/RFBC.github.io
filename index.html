@@ -12,7 +12,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Custom styles -->
   <link href="styles.css" rel="stylesheet">
-  <style>
+
+</head>
+
+<style>
+
+	body {
+		background: #FFFBE4;
+		text-align: justify center;
+    font-family: Arial, sans-serif;
+		width: 90%;
+    margin: auto;
+		   }	
+
+ /* midias queries */
+		
+  .header, .main, .footer {
+     padding: 20px;
+     }
+
+        /* Estilo para tablets (largura máxima de 768px) */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+       }
+    .header, .main, .footer {
+      padding: 15px;
+        }
+      }
+
+        /* Estilo para smartphones (largura máxima de 480px) */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+        }
+    .header, .main, .footer {
+      padding: 10px;
+        }
+
+      /* Ajuste de fontes para telas menores */
+    body {
+        font-size: 14px;
+        }
+
+            /* Ajuste de imagens para telas menores */
+    img {
+        width: 100%;
+        height: auto;
+        }
+      }
+
+
     .section-heading {
       text-align: center;
       width: 100%;
@@ -23,7 +73,7 @@
 		  }
 
       #color-blue-1{
-			color:rgb(2, 2, 100)
+			color:rgb(5, 5, 136)
 		  }
 
     #color-green{
@@ -44,60 +94,25 @@
 
     #texto-alinhado {	
 			text-align: justify center;
-		}	
+		  }	
 
     #esquerda {
       text-align: justify left;
-    }
+      }
 
-     /* midias queries */
-		
-		.header, .main, .footer {
-                padding: 20px;
-            }
+    #texto-h4 {
+      margin: auto;
+      }
+    
 
-        /* Estilo para tablets (largura máxima de 768px) */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-            .header, .main, .footer {
-                padding: 15px;
-            }
-        }
+</style>
 
-        /* Estilo para smartphones (largura máxima de 480px) */
-        @media (max-width: 480px) {
-            .container {
-                width: 100%;
-            }
 
-            .header, .main, .footer {
-                padding: 10px;
-            }
-
-            /* Ajuste de fontes para telas menores */
-            body {
-                font-size: 14px;
-            }
-
-            /* Ajuste de imagens para telas menores */
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-  </style>
-
-</head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-
-
         <img src="multimidia/Logo_RFBC.JPG" alt="RFBC Logo" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,9 +145,10 @@
     <div class="container">
       <br>
       <h1 class="display-4"  id="color-blue">RFBC - Bem vindo ao nosso site</h1>
-      <p class="lead" id="color-blue-1">
+      <br>
+      <h6  id="color-blue-1">
           Uma empresa genuinamente Curitibana, criada para atender outsourcing, 
-          atuando no setor bancário há mais de 30 anos.<br>
+          atuando no setor bancário há mais de 30 anos.<br><br>
          
                 Nosso foco principal é plataforma alta: <br>
                    - Desenvolvimento e manutenção de sistemas bancários e comerciais.   <br>
@@ -145,22 +161,24 @@
                     - portais  <br>
                     - Lojas virtuais (e-commerce) <br>
   
-        </p>
+      </h6>
     </div>
   </div>
 
-        <h3 id="color-blue">
-          Conheça abaixo um pouco mais dos Bancos que atendemos... 
-        </h3>
-        <br>
+        
 
   <!-- Section for each institution -->
   <section id="institutions" class="pb-5">
+    <h4 id="color-blue-1">
+      Conheça abaixo um pouco mais dos Bancos que atendemos... 
+    </h4>
+    <br>
     <div class="container">
       <div class="row bamerindus-section bamerindus-color mb-4">
         <div class="col-md-12">
           <h2 class="section-heading" id="color-green">Bamerindus</h2>
         </div>
+        <br><br>
         <div class="col-md-6" id="text-alinhado">
           <p>Foi o último banco Paranaense, chegou a ser o terceiro no ranking nacional, a RFBC atuou lá, com sistemas de fluxo 
             de caixa (FCB), e acompanhou de perto a transação para o novo Banco. Ele criou o famoso "Natal Bamerindus" do Palacio 
@@ -191,6 +209,7 @@
         <div class="col-md-12">
           <h2 class="section-heading" id="color-yelow">Banco do Brasil - Brasília</h2>
         </div>
+        <br><br>
         <div class="col-md-6 d-flex align-items-left">
           <div class="row">
             <div class="col-4">
@@ -219,6 +238,7 @@
         <div class="col-md-12">
           <h2 class="section-heading" id="color-red">Banco HSBC</h2>
         </div>
+        <br><br>
         <div class="col-md-6">
           <p>O banco HSBC entrou no mercado brasileiro de TI prometendo uma cultura global, ou seja, um sistema único atendendo o mundo todo, não deu certo, usava fabricas de softwares espalhadas pelo globo, os mais usados foram os indianos.</p>
           <p>Possuem vários datacenters pelo mundo; México, Londres e outros...</p>
@@ -229,7 +249,7 @@
           </p>
         </div>
        
-        <div class="col-md-6 d-flex align-items-left">
+        <div class="col-md-6 d-flex   ">
           <div class="row">
             <div class="col-4">
               <img src="multimidia/Logo_HSBC.jpg" class="img-fluid rounded img-proportional" alt="HSBC Foto 1">
@@ -249,6 +269,7 @@
         <div class="col-md-12">
           <h2 class="section-heading" id="color-red-1">Banco Bradesco</h2>
         </div>
+        <br><br>
         <div class="col-md-6 d-flex align-items-left">
           <div class="row">
             <div class="col-4">

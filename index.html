@@ -50,6 +50,44 @@
       text-align: justify left;
     }
 
+     /* midias queries */
+		
+		.header, .main, .footer {
+                padding: 20px;
+            }
+
+        /* Estilo para tablets (largura máxima de 768px) */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .header, .main, .footer {
+                padding: 15px;
+            }
+        }
+
+        /* Estilo para smartphones (largura máxima de 480px) */
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
+
+            .header, .main, .footer {
+                padding: 10px;
+            }
+
+            /* Ajuste de fontes para telas menores */
+            body {
+                font-size: 14px;
+            }
+
+            /* Ajuste de imagens para telas menores */
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
   </style>
 
 </head>
@@ -68,7 +106,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#"><ins>Home</ins></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="quem-somos_RFBC.html">Quem Somos</a>
@@ -80,7 +118,7 @@
             <a class="nav-link" href="produtos_RFBC.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="curiosidades_RFBC.html">Curiosidades</a>
+            <a class="nav-link" href="Contatos_RFBC.html">Contatos</a>
           </li>
         </ul>
       </div>

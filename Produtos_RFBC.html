@@ -25,44 +25,6 @@
         margin: auto;
 		}
 
-    /* midias queries */
-		
-	.header, .main, .footer {
-        padding: 20px;
-        }
-
-        /* Estilo para tablets (largura máxima de 768px) */
-    @media (max-width: 768px) {
-        .container {
-            width: 90%;
-            }
-        .header, .main, .footer {
-            padding: 15px;
-            }
-        }
-
-        /* Estilo para smartphones (largura máxima de 480px) */
-    @media (max-width: 480px) {
-        .container {
-            width: 100%;
-            }
-
-        .header, .main, .footer {
-            padding: 10px;
-            }
-
-        /* Ajuste de fontes para telas menores */
-        body {
-            font-size: 14px;
-            }
-
-            /* Ajuste de imagens para telas menores */
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-        
         header h1{
     		font-size: 1.75em; /* 28/16=1.75 */
 			color:#00f
@@ -133,8 +95,6 @@
 			display: block;
 			color: #9c6496;
 			}
-
-		
 	
 		nav ul {
             color: rgb(147, 177, 212);
@@ -183,6 +143,41 @@
 		#texto-alinhado {	
 			text-align: justify right;
 		  }	
+
+		/* midias queries /*
+	  	/* Estilo para tablets (largura máxima de 768px) */
+	  	@media (max-width: 768px) {
+    		.container {
+      			width: 90%;
+      			}
+    		.header, .main, .footer {
+      			padding: 15px;
+      			}
+    		}
+
+    	/* Estilo para smartphones (largura máxima de 480px) */
+   		@media (max-width: 480px) {
+    		.container {
+      			width: 100%;
+      			}
+    		.header, .main, .footer {
+      			padding: 10px;
+      			}
+
+      	/* Ajuste de fontes para telas menores */
+    		body {
+      			font-size: 14px;
+      			}
+
+      	/* Ajuste de imagens para telas menores */
+
+    		img {
+      			width: 100%;
+      			height: auto;
+      			}
+    		} 
+
+  		/* fim da midia quey /*  
 		
 		
 </style>

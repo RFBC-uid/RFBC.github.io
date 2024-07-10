@@ -18,6 +18,11 @@
 	</head>
 
 	<style>
+
+		h1{
+    		font-size: 1.75em; /* 28/16=1.75 */
+			color:#00f
+		}
 	
 		body {
 			background: #FFFBE4;
@@ -27,45 +32,6 @@
             margin: auto;
 		}	
 
-
-	    /* midias queries */
-
-		.header, .main, .footer {
-                padding: 20px;
-            }
-
-        /* Estilo para tablets (largura máxima de 768px) */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-            .header, .main, .footer {
-                padding: 15px;
-            }
-        }
-
-        /* Estilo para smartphones (largura máxima de 480px) */
-        @media (max-width: 480px) {
-            .container {
-                width: 100%;
-            	}
-
-            .header, .main, .footer {
-                padding: 10px;
-            	}
-
-            /* Ajuste de fontes para telas menores */
-            body {
-                font-size: 14px;
-            	}
-
-            /* Ajuste de imagens para telas menores */
-            img {
-                width: 100%;
-                height: auto;
-            	}
-        	}
-		
 		#quemSomos main img{
 			float: left;
 			margin: 0 20px 20px 0;
@@ -74,10 +40,7 @@
 			background-color: #fff;
 			}
 
-		h1{
-    		font-size: 1.75em; /* 28/16=1.75 */
-			color:#00f
-		}
+		
 		main h2{
 			font-size: 1.75em; /* 28/16=1.75 */
 			color:#00f
@@ -133,7 +96,40 @@
 			color:rgb(5, 5, 121)
 		  	}
 
+/* midias queries /*
+  
+		/* Estilo para tablets (largura máxima de 768px) */
+		@media (max-width: 768px) {
+    		.container {
+      			width: 90%;
+       			}
+    		.header, .main, .footer {
+      			padding: 15px;
+        		}
+      		}	
 
+  		/* Estilo para smartphones (largura máxima de 480px) */
+  		@media (max-width: 480px) {
+    		.container {
+      			width: 100%;
+        		}
+    		.header, .main, .footer {
+      			padding: 10px;
+        		}
+
+      	/* Ajuste de fontes para telas menores */
+    		body {
+        		font-size: 14px;
+        		}
+
+        /* Ajuste de imagens para telas menores */
+    		img {
+        		width: 100%;
+        		height: auto;
+        		}
+      		}
+  		/* fim da midia quey /*  
+		
 	</style>
 
 
